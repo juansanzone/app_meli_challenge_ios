@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2364BB0235D268F000321FC /* MLTools in Frameworks */ = {isa = PBXBuildFile; productRef = D2364BAF235D268F000321FC /* MLTools */; };
 		D2E07A742354552300B08797 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E07A732354552300B08797 /* AppDelegate.swift */; };
 		D2E07A762354552300B08797 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E07A752354552300B08797 /* SceneDelegate.swift */; };
 		D2E07A7B2354552300B08797 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E07A792354552300B08797 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2DDA874235D1FAB00A9704C /* MLTools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MLTools; sourceTree = "<group>"; };
 		D2E07A702354552300B08797 /* mercadolibre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mercadolibre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E07A732354552300B08797 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2E07A752354552300B08797 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,15 +51,40 @@
 		D2E07A972354552500B08797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXGroup section */
+/* Begin PBXFrameworksBuildPhase section */
+		D2E07A6D2354552300B08797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2364BB0235D268F000321FC /* MLTools in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E07A832354552500B08797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2E07A8E2354552500B08797 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 		D2E07A672354552300B08797 = {
 			isa = PBXGroup;
 			children = (
+				D2E07AA323545B6A00B08797 /* packages */,
 				D2E07A722354552300B08797 /* mercadolibre */,
 				D2E07A892354552500B08797 /* mercadolibreTests */,
 				D2E07A942354552500B08797 /* mercadolibreUITests */,
 				D2E07A712354552300B08797 /* Products */,
+				D2E07AA52354A69800B08797 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,9 +129,81 @@
 			path = mercadolibreUITests;
 			sourceTree = "<group>";
 		};
-
+		D2E07AA323545B6A00B08797 /* packages */ = {
+			isa = PBXGroup;
+			children = (
+				D2DDA874235D1FAB00A9704C /* MLTools */,
+			);
+			path = packages;
+			sourceTree = "<group>";
+		};
+		D2E07AA52354A69800B08797 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXNativeTarget section */
+		D2E07A6F2354552300B08797 /* mercadolibre */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E07A9A2354552500B08797 /* Build configuration list for PBXNativeTarget "mercadolibre" */;
+			buildPhases = (
+				D2E07A6C2354552300B08797 /* Sources */,
+				D2E07A6D2354552300B08797 /* Frameworks */,
+				D2E07A6E2354552300B08797 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mercadolibre;
+			packageProductDependencies = (
+				D2364BAF235D268F000321FC /* MLTools */,
+			);
+			productName = mercadolibre;
+			productReference = D2E07A702354552300B08797 /* mercadolibre.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2E07A852354552500B08797 /* mercadolibreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E07A9D2354552500B08797 /* Build configuration list for PBXNativeTarget "mercadolibreTests" */;
+			buildPhases = (
+				D2E07A822354552500B08797 /* Sources */,
+				D2E07A832354552500B08797 /* Frameworks */,
+				D2E07A842354552500B08797 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2E07A882354552500B08797 /* PBXTargetDependency */,
+			);
+			name = mercadolibreTests;
+			productName = mercadolibreTests;
+			productReference = D2E07A862354552500B08797 /* mercadolibreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D2E07A902354552500B08797 /* mercadolibreUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2E07AA02354552500B08797 /* Build configuration list for PBXNativeTarget "mercadolibreUITests" */;
+			buildPhases = (
+				D2E07A8D2354552500B08797 /* Sources */,
+				D2E07A8E2354552500B08797 /* Frameworks */,
+				D2E07A8F2354552500B08797 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D2E07A932354552500B08797 /* PBXTargetDependency */,
+			);
+			name = mercadolibreUITests;
+			productName = mercadolibreUITests;
+			productReference = D2E07A912354552500B08797 /* mercadolibreUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D2E07A682354552300B08797 /* Project object */ = {
