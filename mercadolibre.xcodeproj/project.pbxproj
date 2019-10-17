@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2364BAC235D268F000321FC /* MLNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = D2364BAB235D268F000321FC /* MLNetworking */; };
 		D2364BB0235D268F000321FC /* MLTools in Frameworks */ = {isa = PBXBuildFile; productRef = D2364BAF235D268F000321FC /* MLTools */; };
 		D2E07A742354552300B08797 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E07A732354552300B08797 /* AppDelegate.swift */; };
 		D2E07A762354552300B08797 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E07A752354552300B08797 /* SceneDelegate.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2A7F45E235D2041002C743C /* MLNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MLNetworking; sourceTree = "<group>"; };
 		D2DDA874235D1FAB00A9704C /* MLTools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MLTools; sourceTree = "<group>"; };
 		D2E07A702354552300B08797 /* mercadolibre.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mercadolibre.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E07A732354552300B08797 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2364BAC235D268F000321FC /* MLNetworking in Frameworks */,
 				D2364BB0235D268F000321FC /* MLTools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +135,7 @@
 		D2E07AA323545B6A00B08797 /* packages */ = {
 			isa = PBXGroup;
 			children = (
+				D2A7F45E235D2041002C743C /* MLNetworking */,
 				D2DDA874235D1FAB00A9704C /* MLTools */,
 			);
 			path = packages;
@@ -161,6 +165,7 @@
 			);
 			name = mercadolibre;
 			packageProductDependencies = (
+				D2364BAB235D268F000321FC /* MLNetworking */,
 				D2364BAF235D268F000321FC /* MLTools */,
 			);
 			productName = mercadolibre;
