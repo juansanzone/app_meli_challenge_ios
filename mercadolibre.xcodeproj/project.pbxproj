@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D2364BA8235D268F000321FC /* MLAutosuggest in Frameworks */ = {isa = PBXBuildFile; productRef = D2364BA7235D268F000321FC /* MLAutosuggest */; };
 		D2364BAA235D268F000321FC /* MLDomain in Frameworks */ = {isa = PBXBuildFile; productRef = D2364BA9235D268F000321FC /* MLDomain */; };
 		D2364BAC235D268F000321FC /* MLNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = D2364BAB235D268F000321FC /* MLNetworking */; };
 		D2364BAE235D268F000321FC /* MLRepository in Frameworks */ = {isa = PBXBuildFile; productRef = D2364BAD235D268F000321FC /* MLRepository */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D2A7F45C235D1FF8002C743C /* MLAutosuggest */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MLAutosuggest; sourceTree = "<group>"; };
 		D2A7F45D235D200D002C743C /* MLDomain */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MLDomain; sourceTree = "<group>"; };
 		D2A7F45E235D2041002C743C /* MLNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MLNetworking; sourceTree = "<group>"; };
 		D2A7F460235D207A002C743C /* MLRepository */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MLRepository; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				D2364BAC235D268F000321FC /* MLNetworking in Frameworks */,
 				D2364BB2235D268F000321FC /* MLUI in Frameworks */,
 				D2364BAE235D268F000321FC /* MLRepository in Frameworks */,
+				D2364BA8235D268F000321FC /* MLAutosuggest in Frameworks */,
 				D2364BB0235D268F000321FC /* MLTools in Frameworks */,
 				D2364BAA235D268F000321FC /* MLDomain in Frameworks */,
 			);
@@ -148,6 +151,7 @@
 				D2A7F460235D207A002C743C /* MLRepository */,
 				D2A7F45E235D2041002C743C /* MLNetworking */,
 				D2A7F45D235D200D002C743C /* MLDomain */,
+				D2A7F45C235D1FF8002C743C /* MLAutosuggest */,
 				D2DDA874235D1FAB00A9704C /* MLTools */,
 			);
 			path = packages;
@@ -177,6 +181,7 @@
 			);
 			name = mercadolibre;
 			packageProductDependencies = (
+				D2364BA7235D268F000321FC /* MLAutosuggest */,
 				D2364BA9235D268F000321FC /* MLDomain */,
 				D2364BAB235D268F000321FC /* MLNetworking */,
 				D2364BAD235D268F000321FC /* MLRepository */,
