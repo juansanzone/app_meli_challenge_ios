@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  mercadolibre
+
+  Created by Jose Luis Sagredo on 18/10/2019.
+  Copyright © 2019 Jose Luis Sagredo. All rights reserved.
+*/
+
+"NetworkError_NotReached" = "!Parece que no hay Internet!";
+"NetworkError_NotReached_Description" = "Revisa tu conexión para seguir navegando";
+"UnknownError"="Algo salió mal";
+"UnknownError_Description"="Estamos trabajando para solucionarlo";

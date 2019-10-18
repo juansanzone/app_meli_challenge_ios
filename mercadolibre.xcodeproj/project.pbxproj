@@ -20,6 +20,7 @@
 		D2E07A802354552500B08797 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2E07A7E2354552500B08797 /* LaunchScreen.storyboard */; };
 		D2E07A8B2354552500B08797 /* mercadolibreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E07A8A2354552500B08797 /* mercadolibreTests.swift */; };
 		D2E07A962354552500B08797 /* mercadolibreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E07A952354552500B08797 /* mercadolibreUITests.swift */; };
+		D2EAC01C235D6D59004A4D1A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2EAC01E235D6D59004A4D1A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		D2E07A912354552500B08797 /* mercadolibreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mercadolibreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E07A952354552500B08797 /* mercadolibreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mercadolibreUITests.swift; sourceTree = "<group>"; };
 		D2E07A972354552500B08797 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2EAC01D235D6D59004A4D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		D2E07A722354552300B08797 /* mercadolibre */ = {
 			isa = PBXGroup;
 			children = (
+				D2EAC019235D6CCB004A4D1A /* language */,
 				D2E07A732354552300B08797 /* AppDelegate.swift */,
 				D2E07A752354552300B08797 /* SceneDelegate.swift */,
 				D2E07A792354552300B08797 /* Main.storyboard */,
@@ -162,6 +165,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2EAC019235D6CCB004A4D1A /* language */ = {
+			isa = PBXGroup;
+			children = (
+				D2EAC01E235D6D59004A4D1A /* Localizable.strings */,
+			);
+			path = language;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,6 +365,14 @@
 				D2E07A7F2354552500B08797 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2EAC01E235D6D59004A4D1A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2EAC01D235D6D59004A4D1A /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
