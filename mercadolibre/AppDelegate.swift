@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MLRepository
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        MeliRepository.siteID = .MLA
         return true
     }
 

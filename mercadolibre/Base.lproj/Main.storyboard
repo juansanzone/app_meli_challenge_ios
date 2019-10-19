@@ -97,6 +97,16 @@
             </objects>
             <point key="canvasLocation" x="2030" y="692"/>
         </scene>
+        <!--HomeView-->
+        <scene sceneID="Yfv-8w-cwM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeView" id="odc-vs-XzJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="magnifyingglass" catalog="system" id="fsF-w0-XEB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g45-vB-4fR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1090" y="380"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bell" catalog="system" width="64" height="62"/>
