@@ -43,6 +43,6 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: AutosuggestSearchResultsDelegate {
     func searchBarSearchButtonClicked(_ text: String?) {
-
+        self.performSegue(withIdentifier: "SearchResults", sender: text)
     }
 }

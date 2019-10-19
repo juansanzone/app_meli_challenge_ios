@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IjI-1D-6o9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mercado Libre-->
+        <scene sceneID="m32-cI-W8S">
+            <objects>
+                <viewController id="IjI-1D-6o9" customClass="SearchResultsViewController" customModule="mercadolibre" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iso-5d-rql">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kPG-gn-kiG">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="IjI-1D-6o9" id="jdI-Jd-chJ"/>
+                                    <outlet property="delegate" destination="IjI-1D-6o9" id="OLF-d1-h8g"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="H2Z-69-m42" firstAttribute="bottom" secondItem="kPG-gn-kiG" secondAttribute="bottom" id="DhS-C2-cPG"/>
+                            <constraint firstItem="kPG-gn-kiG" firstAttribute="trailing" secondItem="H2Z-69-m42" secondAttribute="trailing" id="RV7-eo-kCf"/>
+                            <constraint firstItem="kPG-gn-kiG" firstAttribute="top" secondItem="H2Z-69-m42" secondAttribute="top" id="Uft-5f-XrI"/>
+                            <constraint firstItem="kPG-gn-kiG" firstAttribute="leading" secondItem="H2Z-69-m42" secondAttribute="leading" id="hLx-MQ-TuI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H2Z-69-m42"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mercado Libre" id="k4y-mz-mkO">
+                        <barButtonItem key="backBarButtonItem" title=" " id="m8I-Oo-uXf"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="errorDesciptionLabel" destination="cYs-au-j45" id="SXA-sa-v1B"/>
+                        <outlet property="errorImageView" destination="O02-n0-1Qh" id="B9M-RG-2LV"/>
+                        <outlet property="errorTitleLabel" destination="iY6-n0-7ma" id="DdJ-4P-5y7"/>
+                        <outlet property="errorView" destination="eTE-JV-8e3" id="O3q-dL-nqS"/>
+                        <outlet property="tableView" destination="kPG-gn-kiG" id="PDz-jd-iGr"/>
+                        <segue destination="fjz-hf-g2I" kind="show" identifier="SearchResults" id="6WV-sd-2EM"/>
+                    </connections>
+                </viewController>
+                <view contentMode="scaleToFill" id="eTE-JV-8e3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vap-D2-aMW">
+                            <rect key="frame" x="137.5" y="528" width="100" height="45"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="rYU-ak-2Lk"/>
+                                <constraint firstAttribute="width" constant="100" id="x5f-9Z-aQD"/>
+                            </constraints>
+                            <color key="tintColor" name="backButton"/>
+                            <state key="normal" title="Reintentar"/>
+                            <connections>
+                                <action selector="reload:" destination="IjI-1D-6o9" eventType="touchUpInside" id="nzL-aY-01i"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="error_other" translatesAutoresizingMaskIntoConstraints="NO" id="O02-n0-1Qh" customClass="UIImageGifView" customModule="mercadolibre" customModuleProvider="target">
+                            <rect key="frame" x="8" y="78" width="359" height="204"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="O02-n0-1Qh" secondAttribute="height" multiplier="359:204" id="BYG-sG-bD4"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iY6-n0-7ma">
+                            <rect key="frame" x="16" y="298" width="343" height="27.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYs-au-j45">
+                            <rect key="frame" x="16" y="333.5" width="343" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="autosuggestBackground"/>
+                    <constraints>
+                        <constraint firstItem="Vap-D2-aMW" firstAttribute="centerX" secondItem="eTE-JV-8e3" secondAttribute="centerX" id="0FQ-Yj-POx"/>
+                        <constraint firstItem="Rf9-VK-B1a" firstAttribute="trailing" secondItem="cYs-au-j45" secondAttribute="trailing" constant="16" id="77K-MZ-aCF"/>
+                        <constraint firstItem="O02-n0-1Qh" firstAttribute="top" secondItem="Rf9-VK-B1a" secondAttribute="top" constant="34" id="A7J-42-bcm"/>
+                        <constraint firstItem="Rf9-VK-B1a" firstAttribute="trailing" secondItem="O02-n0-1Qh" secondAttribute="trailing" constant="8" id="CRi-AK-3Gy"/>
+                        <constraint firstItem="iY6-n0-7ma" firstAttribute="leading" secondItem="Rf9-VK-B1a" secondAttribute="leading" constant="16" id="LVu-Za-4vx"/>
+                        <constraint firstItem="Rf9-VK-B1a" firstAttribute="bottom" secondItem="Vap-D2-aMW" secondAttribute="bottom" constant="27" id="Mng-KY-KBI"/>
+                        <constraint firstItem="Rf9-VK-B1a" firstAttribute="trailing" secondItem="iY6-n0-7ma" secondAttribute="trailing" constant="16" id="OGt-TU-DDT"/>
+                        <constraint firstItem="cYs-au-j45" firstAttribute="top" secondItem="iY6-n0-7ma" secondAttribute="bottom" constant="8" id="Q7c-Jr-FB1"/>
+                        <constraint firstItem="O02-n0-1Qh" firstAttribute="leading" secondItem="Rf9-VK-B1a" secondAttribute="leading" constant="8" id="QDW-RC-8wj"/>
+                        <constraint firstItem="iY6-n0-7ma" firstAttribute="top" secondItem="O02-n0-1Qh" secondAttribute="bottom" constant="16" id="Z1o-1h-5Sa"/>
+                        <constraint firstItem="cYs-au-j45" firstAttribute="leading" secondItem="Rf9-VK-B1a" secondAttribute="leading" constant="16" id="zNk-xo-M6Z"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Rf9-VK-B1a"/>
+                </view>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vdg-4c-aj4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1217.3913043478262" y="2237.9464285714284"/>
+        </scene>
+        <!--SearchResultsView-->
+        <scene sceneID="ALg-N0-02P">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchResultsView" id="fjz-hf-g2I" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="6x5-oa-bK1"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R6G-EV-WwH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-491" y="2239"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="error_other" width="780" height="440"/>
+        <namedColor name="autosuggestBackground">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backButton">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+</document>

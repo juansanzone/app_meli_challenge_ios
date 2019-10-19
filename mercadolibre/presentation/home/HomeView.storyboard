@@ -42,10 +42,23 @@
                     <navigationItem key="navigationItem" title="Mercado Libre" id="xdt-kJ-euB">
                         <barButtonItem key="backBarButtonItem" title=" " id="xWF-au-eLY"/>
                     </navigationItem>
+                    <connections>
+                        <segue destination="eGC-zJ-hFw" kind="show" identifier="SearchResults" id="m7y-rf-Z9R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCH-6j-0Qn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-236" y="692"/>
+        </scene>
+        <!--SearchResultsView-->
+        <scene sceneID="wco-OP-PSe">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchResultsView" id="eGC-zJ-hFw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="JpF-qo-kLJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="52V-ac-nk1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="586" y="692"/>
         </scene>
     </scenes>
     <resources>
