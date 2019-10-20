@@ -68,6 +68,10 @@ class SearchResultsViewController: StateViewController {
         if segue.destination is SearchResultsViewController {
             (segue.destination as! SearchResultsViewController).vm.query = (sender as! String)
         }
+        
+        if segue.destination is DetailViewController {
+            (segue.destination as! DetailViewController).vm.id = (sender as! String)
+        }
     }
     
     func isActiveLoading() -> Bool {
@@ -131,7 +135,7 @@ extension SearchResultsViewController: UITableViewDataSource, UITableViewDelegat
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         if !self.isActiveLoading() {
-
+            self.performSegue(withIdentifier: "ShowDetail", sender: self.vm.data[indexPath.row].id)
         }
     }
     

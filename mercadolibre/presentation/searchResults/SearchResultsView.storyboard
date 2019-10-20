@@ -47,6 +47,7 @@
                         <outlet property="errorView" destination="eTE-JV-8e3" id="O3q-dL-nqS"/>
                         <outlet property="tableView" destination="kPG-gn-kiG" id="PDz-jd-iGr"/>
                         <segue destination="fjz-hf-g2I" kind="show" identifier="SearchResults" id="6WV-sd-2EM"/>
+                        <segue destination="bn9-cD-bwO" kind="show" identifier="ShowDetail" id="HyR-hs-4i6"/>
                     </connections>
                 </viewController>
                 <view contentMode="scaleToFill" id="eTE-JV-8e3">
@@ -114,6 +115,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R6G-EV-WwH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-491" y="2239"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="Rdu-6a-CRV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Detail" id="bn9-cD-bwO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="V39-5Q-k9A"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kr0-lh-Brb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1217" y="2677"/>
         </scene>
     </scenes>
     <resources>
