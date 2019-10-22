@@ -53,6 +53,11 @@ class SearchResultsViewController: StateViewController {
         self.navigationItem.hidesSearchBarWhenScrolling = false
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.autosuggest.fixOrigin()
+    }
+    
     @objc func loadData(_ refreshControl: UIRefreshControl? = nil) {
         self.vm.load()
     }
