@@ -18,6 +18,7 @@
 		D2C84CFB235564F0003B2253 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C84CFA235564F0003B2253 /* HomeView.storyboard */; };
 		D2C84CFD235564FB003B2253 /* SearchResultsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C84CFC235564FB003B2253 /* SearchResultsView.storyboard */; };
 		D2C84D0223559130003B2253 /* SearchResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C84D0123559130003B2253 /* SearchResultsViewModel.swift */; };
+		D2D7804623610D1400E02D5D /* MLLogging in Frameworks */ = {isa = PBXBuildFile; productRef = D2D7804523610D1400E02D5D /* MLLogging */; };
 		D2D99F3423567B4B00894258 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2D99F3323567B4B00894258 /* Detail.storyboard */; };
 		D2D99F3623568BC600894258 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D99F3523568BC600894258 /* DetailViewController.swift */; };
 		D2D99F39235692E500894258 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D99F38235692E500894258 /* DetailViewModel.swift */; };
@@ -71,6 +72,7 @@
 		D2A7F45E235D2041002C743C /* MLNetworking */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MLNetworking; sourceTree = "<group>"; };
 		D2A7F460235D207A002C743C /* MLRepository */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MLRepository; sourceTree = "<group>"; };
 		D2A7F461235D209B002C743C /* MLUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MLUI; sourceTree = "<group>"; };
+		D2A86F3E23610B4D001C5A34 /* MLLogging */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MLLogging; sourceTree = "<group>"; };
 		D2C84CED23553BBD003B2253 /* SearchItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewCell.swift; sourceTree = "<group>"; };
 		D2C84CEE23553BBD003B2253 /* SearchItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchItemTableViewCell.xib; sourceTree = "<group>"; };
 		D2C84CFA235564F0003B2253 /* HomeView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				D2364BAC235D268F000321FC /* MLNetworking in Frameworks */,
 				D2364BB2235D268F000321FC /* MLUI in Frameworks */,
 				D2364BAE235D268F000321FC /* MLRepository in Frameworks */,
+				D2D7804623610D1400E02D5D /* MLLogging in Frameworks */,
 				D2364BA8235D268F000321FC /* MLAutosuggest in Frameworks */,
 				D2364BB0235D268F000321FC /* MLTools in Frameworks */,
 				D2364BAA235D268F000321FC /* MLDomain in Frameworks */,
@@ -307,6 +310,7 @@
 		D2E07AA323545B6A00B08797 /* packages */ = {
 			isa = PBXGroup;
 			children = (
+				D2A86F3E23610B4D001C5A34 /* MLLogging */,
 				D2A7F461235D209B002C743C /* MLUI */,
 				D2A7F460235D207A002C743C /* MLRepository */,
 				D2A7F45E235D2041002C743C /* MLNetworking */,
@@ -386,6 +390,7 @@
 				D2364BAD235D268F000321FC /* MLRepository */,
 				D2364BAF235D268F000321FC /* MLTools */,
 				D2364BB1235D268F000321FC /* MLUI */,
+				D2D7804523610D1400E02D5D /* MLLogging */,
 			);
 			productName = mercadolibre;
 			productReference = D2E07A702354552300B08797 /* mercadolibre.app */;
@@ -891,6 +896,10 @@
 		D2364BB1235D268F000321FC /* MLUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MLUI;
+		};
+		D2D7804523610D1400E02D5D /* MLLogging */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MLLogging;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
