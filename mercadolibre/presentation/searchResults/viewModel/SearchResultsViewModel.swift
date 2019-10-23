@@ -9,11 +9,16 @@
 import UIKit
 import MLDomain
 import MLTools
+import MLLogging
 import MLRepository
 
 class SearchResultsViewModel:ViewModel<[SearchItem]> {
     var itemsLoading = 7
-    var query:String!
+    var query:String! {
+        didSet {
+            logger.info("Search results: \(self.query ?? "unknown")")
+        }
+    }
     
     init() { super.init([]) }
     
@@ -27,6 +32,7 @@ class SearchResultsViewModel:ViewModel<[SearchItem]> {
                 return
             }
             if let error = error {
+                logger.error("The error occurred when getting an array with SearchItem", error: error)
                 self?.error(error: error)
             }
         }

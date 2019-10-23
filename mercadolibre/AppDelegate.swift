@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MLLogging
 import MLRepository
 
 @UIApplicationMain
@@ -14,7 +15,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        MeliRepository.siteID = .MLA
+        
+        MeliRepository.siteID = {
+            let id:MeliRepository.SiteIDType = .MLA
+            logger.info("Set siteID \(id)")
+            return id
+        }()
+        
         return true
     }
 

@@ -9,12 +9,17 @@
 import UIKit
 import MLDomain
 import MLTools
+import MLLogging
 import MLRepository
 import MLUI
 
 class DetailViewModel:ViewModel<[RowProtocol]> {
     var itemsLoading = [RowProtocol]()
-    var id:String!
+    var id:String! {
+        didSet {
+            logger.info("Select detail: ID \(self.id ?? "unknown")")
+        }
+    }
     var detail:Detail?
     
     init() { super.init([]) }
@@ -31,7 +36,7 @@ class DetailViewModel:ViewModel<[RowProtocol]> {
                 return
             }
             if let error = error {
-                print(error)
+                logger.error("The error occurred when obtaining the Detail of \(self?.id ?? "unknown")", error: error)
                 self?.error(error: error)
             }
         }
