@@ -78,6 +78,7 @@
 		D2C84CFA235564F0003B2253 /* HomeView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeView.storyboard; sourceTree = "<group>"; };
 		D2C84CFC235564FB003B2253 /* SearchResultsView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchResultsView.storyboard; sourceTree = "<group>"; };
 		D2C84D0123559130003B2253 /* SearchResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewModel.swift; sourceTree = "<group>"; };
+		D2D7804B2361220E00E02D5D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D2D99F3323567B4B00894258 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Detail.storyboard; path = mercadolibre/presentation/detail/Detail.storyboard; sourceTree = SOURCE_ROOT; };
 		D2D99F3523568BC600894258 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D2D99F38235692E500894258 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
@@ -153,6 +154,14 @@
 				D2C84D0123559130003B2253 /* SearchResultsViewModel.swift */,
 			);
 			path = viewModel;
+			sourceTree = "<group>";
+		};
+		D2D7804A236121FF00E02D5D /* metadata */ = {
+			isa = PBXGroup;
+			children = (
+				D2D7804B2361220E00E02D5D /* README.md */,
+			);
+			name = metadata;
 			sourceTree = "<group>";
 		};
 		D2D99F32235679E400894258 /* detail */ = {
@@ -255,6 +264,7 @@
 		D2E07A672354552300B08797 = {
 			isa = PBXGroup;
 			children = (
+				D2D7804A236121FF00E02D5D /* metadata */,
 				D2E07AA323545B6A00B08797 /* packages */,
 				D2E07A722354552300B08797 /* mercadolibre */,
 				D2E07A892354552500B08797 /* mercadolibreTests */,
